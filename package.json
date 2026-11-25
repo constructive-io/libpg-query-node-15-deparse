@@ -53,7 +53,7 @@
     "url": "git://github.com/launchql/libpg-query-node.git"
   },
   "devDependencies": {
-    "@launchql/proto-cli": "1.25.0",
+    "@constructive-io/protobufjs-cli": "1.3.3",
     "@yamlize/cli": "^0.8.0",
     "aws-sdk": "2.1691.0",
     "chai": "^3.5.0",
@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@emnapi/runtime": "^0.43.1",
-    "@launchql/protobufjs": "7.2.6",
+    "@constructive-io/protobufjs": "7.6.6",
     "@mapbox/node-pre-gyp": "^1.0.8",
     "@pgsql/types": "^15.0.1",
     "node-addon-api": "^7.0.0",
