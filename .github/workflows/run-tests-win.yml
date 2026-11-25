@@ -2,12 +2,12 @@ name: Windows 🛠
 
 on:
   pull_request:
-    types: [opened, push, reopened]
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 jobs:
   build-windows:
-    runs-on: windows-latest
+    runs-on: windows-2022
     steps:
       - name: Checkout Repository 📥
         uses: actions/checkout@v4

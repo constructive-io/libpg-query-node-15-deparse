@@ -2,12 +2,14 @@ name: Mac 🧪
 
 on:
   pull_request:
-    types: [opened, push, reopened]
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 jobs:
   run-tests:
-    runs-on: macos-latest
+    runs-on: macos-15
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.2.app/Contents/Developer
     steps:
       - name: Checkout Repository 📥
         uses: actions/checkout@v4
